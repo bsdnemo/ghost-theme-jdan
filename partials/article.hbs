@@ -1,0 +1,40 @@
+{{#post}}
+<article class="{{post_class}}">
+	<header class="post-header">
+		<span class="post-meta">{{date format="YYYY-MM-DD"}}</span>
+		<span class="post-tag">{{tags}}</span>
+		<h4 class="post-title">
+			<a href="{{url}}">
+				{{title}}
+			</a>
+		</h4>						
+	</header>
+	<section class="post-content">
+		<p>
+			{{content}}
+		</p>
+	</section>
+	<footer class="post-footer">
+		<section class="author">
+			<h4>{{author.name}}</h4>
+			<p>{{author.bio}}</p>
+			<ul class="author-meta">
+				{{#if author.location}}<li>{{author.location}}</li>{{/if}}
+				{{#if author.website}}
+				<li>
+					<a href="{{author.website}}">
+						{{author.website}}
+					</a>
+				</li>
+				{{/if}}
+			</ul>
+		</section>
+		<section class="share">
+			{{> bshare}}
+		</section>
+		<section class="comment">
+			{{> uyan}}
+		</section>
+	</footer>
+</article>
+{{/post}}

@@ -1,0 +1,11 @@
+<div class="hero-unit header"{{#if @blog.cover}} style="background-image:url({{@blog.cover}})"{{/if}}>
+		{{#if @blog.logo}}
+		<p>
+			<a href="{{@blog.url}}">
+				<img src="{{@blog.logo}}">
+			</a>
+		</p>
+		{{/if}}
+		<p>{{@blog.title}}</p>
+		<p>{{@blog.description}}</p>
+</div>

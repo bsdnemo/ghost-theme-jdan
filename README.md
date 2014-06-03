@@ -1,4 +1,4 @@
-ghost-theme-jdan
-================
+jdan
+======
 
-一个简单的ghost皮肤
+一个简单的基于bootstrap的ghost模板

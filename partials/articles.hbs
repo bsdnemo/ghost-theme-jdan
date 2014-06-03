@@ -1,0 +1,21 @@
+<div class="content">
+	{{#foreach posts}}
+	<article class="{{post_class}}">
+		<header class="post-header">
+			<span class="post-meta">{{date format="YYYY-MM-DD"}}</span>
+			<span class="post-tag">{{tags}}</span>
+			<h4 class="post-title">
+				<a href="{{url}}">
+					{{title}}
+				</a>
+			</h4>						
+		</header>
+		<section class="post-excerpt">
+			<p>
+				{{excerpt}}
+			</p>
+		</section>
+	</article>
+	<hr>
+	{{/foreach}}
+</div>
